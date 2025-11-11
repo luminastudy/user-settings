@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "User Settings",
+  "description": "Schema for user settings configuration",
+  "type": "object",
+  "properties": {
+    "language": {
+      "type": "string",
+      "description": "User interface language",
+      "enum": ["he", "en"],
+      "default": "en"
+    }
+  },
+  "required": ["language"],
+  "additionalProperties": false
+}
