@@ -70,7 +70,35 @@ This will generate TypeScript types from the JSON schema.
 
 ### Publishing
 
-This package uses [release-it](https://github.com/release-it/release-it) for automated releases. Releases are managed through GitHub Actions.
+This package uses [release-it](https://github.com/release-it/release-it) for automated releases.
+
+#### Automatic Release (on push to main)
+
+**Every push to the `main` branch automatically triggers a patch release** (e.g., 0.1.0 → 0.1.1).
+
+The workflow will:
+- Run tests
+- Build the package
+- Bump the patch version
+- Update CHANGELOG.md
+- Create a git commit and tag
+- Create a GitHub release
+- Publish to npm
+
+**Note:** Release commits from github-actions[bot] are automatically skipped to prevent infinite loops.
+
+#### Manual Release (for minor/major versions)
+
+To create a minor or major release:
+
+1. Go to the [Actions tab](https://github.com/luminastudy/user-settings/actions)
+2. Select the "Release" workflow
+3. Click "Run workflow"
+4. Choose the version increment:
+   - **patch** (0.1.0 → 0.1.1) - Bug fixes
+   - **minor** (0.1.0 → 0.2.0) - New features
+   - **major** (0.1.0 → 1.0.0) - Breaking changes
+5. Click "Run workflow"
 
 #### Local Release (requires maintainer access)
 
@@ -78,32 +106,11 @@ This package uses [release-it](https://github.com/release-it/release-it) for aut
 # Dry run to see what would happen
 pnpm run release:dry
 
-# Create a patch release (0.1.0 -> 0.1.1)
-pnpm run release patch
-
-# Create a minor release (0.1.0 -> 0.2.0)
-pnpm run release minor
-
-# Create a major release (0.1.0 -> 1.0.0)
-pnpm run release major
+# Create a specific release
+pnpm run release patch   # 0.1.0 -> 0.1.1
+pnpm run release minor   # 0.1.0 -> 0.2.0
+pnpm run release major   # 0.1.0 -> 1.0.0
 ```
-
-#### CI/CD Release
-
-1. Go to the [Actions tab](https://github.com/luminastudy/user-settings/actions)
-2. Select the "Release" workflow
-3. Click "Run workflow"
-4. Choose the version increment (patch/minor/major)
-5. Click "Run workflow"
-
-This will:
-- Run tests
-- Build the package
-- Bump the version
-- Update CHANGELOG.md
-- Create a git commit and tag
-- Create a GitHub release
-- Publish to npm
 
 ## License
 
