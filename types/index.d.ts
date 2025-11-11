@@ -14,7 +14,27 @@ export interface UserSettings {
    */
   language: "he" | "en";
   /**
-   * User's degree identifier
+   * User's registered degree identifier
    */
   degreeId?: string | null;
+  /**
+   * User's registered institution identifier
+   */
+  institutionId?: string | null;
+  /**
+   * User's registered degree title/name
+   */
+  degreeTitle?: string | null;
+  /**
+   * Preferred font family for UI
+   */
+  fontFamily?: string | null;
+  /**
+   * Whether to shuffle questions in quizzes
+   */
+  shuffleQuestions?: boolean;
+  /**
+   * Developer mode flag
+   */
+  devMode?: boolean;
 }

@@ -12,8 +12,33 @@
     },
     "degreeId": {
       "type": ["string", "null"],
-      "description": "User's degree identifier",
+      "description": "User's registered degree identifier",
       "default": null
+    },
+    "institutionId": {
+      "type": ["string", "null"],
+      "description": "User's registered institution identifier",
+      "default": null
+    },
+    "degreeTitle": {
+      "type": ["string", "null"],
+      "description": "User's registered degree title/name",
+      "default": null
+    },
+    "fontFamily": {
+      "type": ["string", "null"],
+      "description": "Preferred font family for UI",
+      "default": null
+    },
+    "shuffleQuestions": {
+      "type": "boolean",
+      "description": "Whether to shuffle questions in quizzes",
+      "default": false
+    },
+    "devMode": {
+      "type": "boolean",
+      "description": "Developer mode flag",
+      "default": false
     }
   },
   "required": ["language"],
