@@ -1,0 +1,23 @@
+# Development files
+.git
+.github
+.claude
+.kiro
+.release-it.json
+node_modules
+pnpm-lock.yaml
+
+# Documentation
+*.md
+!README.md
+!CHANGELOG.md
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

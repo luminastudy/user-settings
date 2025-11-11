@@ -1,0 +1,45 @@
+{
+  "name": "@lumina-study/user-settings",
+  "version": "0.1.0",
+  "description": "JSON schema and TypeScript types for Lumina Study user settings configuration",
+  "main": "schema/user-settings.schema.json",
+  "types": "types/index.d.ts",
+  "files": [
+    "schema",
+    "types",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "npm run generate-types",
+    "generate-types": "json2ts -i schema/user-settings.schema.json -o types/index.d.ts",
+    "prepare": "npm run build",
+    "test": "node -e \"require('./schema/user-settings.schema.json')\"",
+    "release": "release-it",
+    "release:dry": "release-it --dry-run --increment patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumina-study/user-settings.git"
+  },
+  "keywords": [
+    "json-schema",
+    "user-settings",
+    "configuration",
+    "lumina-study"
+  ],
+  "author": "Lumina Study",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lumina-study/user-settings/issues"
+  },
+  "homepage": "https://github.com/lumina-study/user-settings#readme",
+  "devDependencies": {
+    "json-schema-to-typescript": "^15.0.3",
+    "@release-it/keep-a-changelog": "^5.0.0",
+    "release-it": "^17.10.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
