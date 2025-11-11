@@ -9,6 +9,11 @@
       "description": "User interface language",
       "enum": ["he", "en"],
       "default": "en"
+    },
+    "degreeId": {
+      "type": ["string", "null"],
+      "description": "User's degree identifier",
+      "default": null
     }
   },
   "required": ["language"],
