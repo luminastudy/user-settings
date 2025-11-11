@@ -90,7 +90,7 @@ pnpm run release major
 
 #### CI/CD Release
 
-1. Go to the [Actions tab](https://github.com/lumina-study/user-settings/actions)
+1. Go to the [Actions tab](https://github.com/luminastudy/user-settings/actions)
 2. Select the "Release" workflow
 3. Click "Run workflow"
 4. Choose the version increment (patch/minor/major)

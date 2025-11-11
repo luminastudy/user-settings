@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lumina-study/user-settings.git"
+    "url": "git+https://github.com/luminastudy/user-settings.git"
   },
   "keywords": [
     "json-schema",
@@ -31,9 +31,9 @@
   "author": "Lumina Study",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lumina-study/user-settings/issues"
+    "url": "https://github.com/luminastudy/user-settings/issues"
   },
-  "homepage": "https://github.com/lumina-study/user-settings#readme",
+  "homepage": "https://github.com/luminastudy/user-settings#readme",
   "devDependencies": {
     "json-schema-to-typescript": "^15.0.3",
     "@release-it/keep-a-changelog": "^5.0.0",
