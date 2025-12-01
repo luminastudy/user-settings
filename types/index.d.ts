@@ -14,18 +14,6 @@ export interface UserSettings {
    */
   language: "he" | "en";
   /**
-   * User's registered degree identifier
-   */
-  degreeId?: string | null;
-  /**
-   * User's registered institution identifier
-   */
-  institutionId?: string | null;
-  /**
-   * User's registered degree title/name
-   */
-  degreeTitle?: string | null;
-  /**
    * Preferred font family for UI
    */
   fontFamily?: string | null;

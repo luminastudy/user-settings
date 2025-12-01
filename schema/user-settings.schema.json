@@ -10,21 +10,6 @@
       "enum": ["he", "en"],
       "default": "en"
     },
-    "degreeId": {
-      "type": ["string", "null"],
-      "description": "User's registered degree identifier",
-      "default": null
-    },
-    "institutionId": {
-      "type": ["string", "null"],
-      "description": "User's registered institution identifier",
-      "default": null
-    },
-    "degreeTitle": {
-      "type": ["string", "null"],
-      "description": "User's registered degree title/name",
-      "default": null
-    },
     "fontFamily": {
       "type": ["string", "null"],
       "description": "Preferred font family for UI",
