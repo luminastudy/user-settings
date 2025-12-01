@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- **BREAKING**: Removed `degreeId`, `institutionId`, and `degreeTitle` fields from user settings schema as part of migration to community courses
+
 ## [0.1.1] - 2025-11-11
 
 ### Added
